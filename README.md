@@ -30,3 +30,7 @@ to be able to have write access.
 `singularity shell --writable -B <path to>/homebrew-ensembl:/tmp/formulas <path to>/linxuxbrew`
 3. Try to install the formula:  
 `brew install <path to>/<amazing software>.rb`
+
+## Updating the Linuxbrew version
+Whenever the Ensembl environment uses a newer version of Linuxbrew, the Dockerfile needs to be updated
+otherwise continuous tests and user tests might fail
