@@ -14,7 +14,7 @@ Now you can edit the file to suit your purpose!
 This is the recommended way as it allows more flexibility.
 
 1. Pull the image:  
-`docker pull ensembl/ensembl-linuxbrew-docker:latest`
+`docker pull ensemblorg/ensembl-linuxbrew-docker:latest`
 2. Add a mount point to the directory where the formula is
 3. Start an interactive terminal and try to install your formula:  
 `brew install <path to>/<amazing software>.rb`
@@ -25,7 +25,7 @@ If you don't have access to Docker but Singularity, you need to work in a sandbo
 to be able to have write access.
 
 1. Pull the image in a Singularity sandbox:  
-`singularity build --sandbox <path to>/linxuxbrew docker://ensembl/ensembl-linuxbrew-docker:latest`
+`singularity build --sandbox <path to>/linxuxbrew docker://ensemblorg/ensembl-linuxbrew-docker:latest`
 2. Open an interacitve terminal and mount the directory where the formula is:  
 `singularity shell --writable -B <path to>/homebrew-ensembl:/tmp/formulas <path to>/linxuxbrew`
 3. Try to install the formula:  
